@@ -1,0 +1,142 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+/* NORMALIZACIÓN */
+/* *:es un selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+  /* colores */
+  --amarillo: #eac926;
+  --azul: #03264c;
+  --celeste: #1259c3;
+  --gris-oscuro: #666;
+  --gris-claro: #ebebeb;
+  --verde: #39b54a;
+  --negro: #000000;
+  --blanco: #ffffff;
+  /* tamaños de fuentes */
+  --text-sm: 1.2em;
+  --text-md: 1.6em;
+  --text-lg: 1.8em;
+  --title-md: 2.4em;
+  /* familias de fuentes */
+  --roboto: "Roboto", sans-serif;
+}
+
+/* ESTILOS COMUNES */
+
+/* font-size: 
+1rem = 16px;
+1em = 16px;
+Se define en 62.5% para realizar conversiones mas repidas
+1rem = 10px;
+1em = 10px;
+*/
+html {
+  font-size: 62.5%;
+  font-family: var(--roboto);
+}
+
+h3 {
+  font-size: var(--title-md);
+}
+
+p {
+  font-size: var(--text-sm);
+}
+/* HEADER */
+
+header {
+  background-color: var(--amarillo);
+}
+
+div.top-header {
+  padding: 5%;
+}
+
+header picture.logo {
+  display: block; /* Para que tenga el comportamiento de div y poder darle width */
+  width: 50%;
+}
+
+header nav {
+  font-size: var(--text-sm);
+}
+
+header ul li {
+  list-style-type: none; /* Para quitar la viñeta */
+}
+
+header ul li a {
+  text-decoration: none;
+  color: var(--negro);
+}
+
+header .form .input {
+  background-color: var(--blanco);
+  border: 1px solid var(--negro);
+  color: var(--gris-oscuro);
+  padding: 2px;
+}
+
+header .form .submit {
+  background: var(--blanco);
+  border: 1px solid var(--negro);
+  width: 18px;
+  padding: 2px;
+}
+
+header div.top-header p {
+  text-align: center;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background: #0044aa;
+  font-size: 20px;
+  color: var(--blanco);
+  height: 40px;
+  width: 40px;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* MAIN */
+/* FOOTER */
+
+footer {
+  text-align: center;
+}
+
+footer div {
+  color: var(--celeste);
+  font-size: 20px;
+  margin: 0px 0 10px 0;
+}
+
+footer h3 {
+  color: var(--negro);
+  font-family: var(--roboto);
+  font-size: var(--text-md);
+}
+
+footer p {
+  color: var(--negro);
+  font-family: var(--roboto);
+  font-size: var(--text-sm);
+}
+
+footer #copyright {
+  text-align: left;
+  margin: 30px 0 20px 0;
+}
