@@ -44,7 +44,11 @@ html {
   font-family: var(--roboto);
 }
 
-h3 {
+body {
+  background-color: var(--gris-claro);
+}
+
+h2 {
   font-size: var(--title-md);
 }
 
@@ -111,7 +115,69 @@ div.burger-menu i {
   padding: 10px;
   border-radius: 5px;
 }
+
+/* BANNER */
+
+section.banner img {
+  width: 100%;
+}
+
 /* MAIN */
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main section article {
+  background-color: var(--blanco);
+  margin: 10px 0px;
+}
+
+main section article img {
+  width: 100%;
+}
+
+h2,
+.description {
+  color: var(--gris-oscuro);
+}
+
+.price {
+  font-size: var(--text-lg);
+}
+
+.discount,
+.description {
+  font-size: var(--text-md);
+}
+
+.description {
+  display: none;
+}
+
+main section article i,
+.discount {
+  color: var(--verde);
+}
+
+main section article i {
+  font-size: var(--text-md);
+  border: 1px solid var(--verde);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+main section h3 {
+  margin: 20px 0px;
+}
+
+article div.product-card {
+  width: 100%;
+  border: 1px solid var(--gris-claro);
+  padding: 15px;
+}
+
 /* FOOTER */
 
 footer {
@@ -139,4 +205,19 @@ footer p {
 footer #copyright {
   text-align: left;
   margin: 30px 0 20px 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 361px) {
+  .description {
+    display: block;
+  }
+
+  main section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+}
+
+@media screen and (min-width: 769px) {
 }
