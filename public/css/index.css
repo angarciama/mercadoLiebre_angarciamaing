@@ -55,6 +55,13 @@ h2 {
 p {
   font-size: var(--text-sm);
 }
+
+.flex-row {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
 /* HEADER */
 
 header {
@@ -62,12 +69,20 @@ header {
 }
 
 div.top-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 5%;
 }
 
 header picture.logo {
   display: block; /* Para que tenga el comportamiento de div y poder darle width */
   width: 50%;
+}
+
+.form {
+  width: 50%;
+  display: flex;
 }
 
 header nav {
@@ -145,6 +160,7 @@ h2,
 
 .price {
   font-size: var(--text-lg);
+  /*width: 30%;*/
 }
 
 .discount,
@@ -160,12 +176,23 @@ main section article i,
 .discount {
   color: var(--verde);
 }
+/*
+.discount {
+  width: 70%;
+}*/
 
 main section article i {
   font-size: var(--text-md);
   border: 1px solid var(--verde);
   border-radius: 50%;
-  padding: 8px;
+  display: block;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  right: 20px;
+  top: -15px;
 }
 
 main section h3 {
@@ -176,6 +203,7 @@ article div.product-card {
   width: 100%;
   border: 1px solid var(--gris-claro);
   padding: 15px;
+  position: relative;
 }
 
 /* FOOTER */
@@ -213,6 +241,17 @@ footer #copyright {
   .description {
     display: block;
   }
+  .products-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .products-container article {
+    max-width: 45%;
+  }
 
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -232,4 +271,7 @@ footer #copyright {
 }
 
 @media screen and (min-width: 769px) {
+  .products-container article {
+    max-width: 22%;
+  }
 }
