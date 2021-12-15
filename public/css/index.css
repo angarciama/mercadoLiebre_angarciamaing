@@ -116,6 +116,10 @@ header div.top-header p {
   text-align: center;
 }
 
+header nav {
+  display: none;
+}
+
 div.burger-menu {
   text-align: center;
 }
@@ -238,6 +242,14 @@ footer #copyright {
 /* RESPONSIVE */
 
 @media screen and (min-width: 361px) {
+  .burger-menu {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }
+
   .description {
     display: block;
   }
@@ -255,18 +267,6 @@ footer #copyright {
 
   main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .login {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 361px) {
-  .burger-menu {
-    display: none;
   }
 }
 
