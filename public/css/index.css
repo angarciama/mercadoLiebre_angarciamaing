@@ -221,10 +221,117 @@ article div.product-card {
   position: relative;
 }
 
+/* LOGIN */
+
+.login h3 {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: var(--title-md);
+  font-weight: 500;
+}
+
+.login form {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.login form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 2% auto;
+  width: 70%;
+}
+
+.login form input[type="text"] {
+  color: var(--gris-oscuro);
+}
+
+/* REGISTER */
+
+.register {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.register h3 {
+  font-size: var(--title-md);
+  font-weight: 500;
+  padding: 1%;
+  text-align: center;
+}
+
+.register form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.register form h4 {
+  margin-top: 3%;
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+.register form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 2%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelTitle {
+  font-size: var(--text-md);
+  font-weight: 500;
+  margin-top: 3%;
+}
+
+.userType {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.3em;
+  gap: 2em;
+}
+
+.userType input {
+  margin: 1em;
+}
+
+.intereses {
+  display: flex;
+  flex-direction: column;
+  margin: 0.3em;
+}
+
+.intereses input {
+  margin: 1em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+}
+
 /* FOOTER */
 
 footer {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 footer div {
@@ -255,7 +362,7 @@ footer #copyright {
 @media screen and (min-width: 361px) {
   div.top-header {
     display: flex;
-    padding: 5%;
+    padding: 3%;
     align-items: center;
     justify-content: center;
   }
