@@ -164,6 +164,10 @@ main section article {
   margin: 10px 0px;
 }
 
+main section article:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 main section article img {
   width: 100%;
 }
@@ -184,13 +188,19 @@ h2,
 }
 
 .description {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+main section article:hover .description {
+  opacity: 1;
 }
 
 main section article i,
 .discount {
   color: var(--verde);
 }
+
 /*
 .discount {
   width: 70%;
@@ -208,6 +218,11 @@ main section article i {
   position: absolute;
   right: 20px;
   top: -15px;
+  transition: transform 0.3s ease-in;
+}
+
+main section article:hover i {
+  transform: rotate(-90deg);
 }
 
 main section h3 {
@@ -252,6 +267,16 @@ article div.product-card {
   color: var(--gris-oscuro);
 }
 
+.login .btn {
+  background-color: var(--celeste);
+  color: var(--blanco);
+  width: 50%;
+  transition: background 0.5s ease;
+}
+
+.login .btn:hover {
+  background-color: var(--azul-claro);
+}
 /* REGISTER */
 
 .register {
@@ -388,6 +413,7 @@ footer #copyright {
   }
 
   header .form .input {
+    width: 90%;
     background-color: var(--blanco);
     border: 1px solid var(--negro);
     color: var(--gris-oscuro);
@@ -433,9 +459,9 @@ footer #copyright {
     max-width: 45%;
   }
 
-  main section article {
+  /*main section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
+  }*/
 }
 
 @media screen and (min-width: 769px) {
